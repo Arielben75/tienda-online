@@ -3,22 +3,140 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
 model Usuarios {
-  id              Int       @id @default(autoincrement())
-  nombres         String
-  primerApellido  String
-  segundoApellido String
-  fechaNacimiento String
-  nacionalidad    String
-  email           String    @unique
-  userName        String    @unique
-  password        String
-  celular         String
-  estado          Int       @default(1)
-  creadoEn        DateTime? @default(now())
-  actualizadoEn   DateTime? @updatedAt
+  id                 Int                  @id @default(autoincrement())
+  nombres            String
+  primerApellido     String
+  segundoApellido    String
+  fechaNacimiento    String
+  nacionalidad       String
+  email              String               @unique
+  userName           String               @unique
+  password           String
+  celular            String
+  estado             Int                  @default(1)
+  creadoEn           DateTime?            @default(now()) @db.Timestamp(0)
+  actualizadoEn      DateTime?            @updatedAt @db.Timestamp(0)
+  solicitudesCompras solicitudesCompras[]
+
+  @@map("usuarios")
+}
+
+model articulos {
+  id          Int     @id @default(autoincrement())
+  nombre      String  @db.VarChar(500)
+  descripcion String? @db.VarChar(500)
+  codigo      String  @db.VarChar(50)
+  tipo        String  @db.VarChar(50)
+
+  estado               Int                    @default(1)
+  creadoEn             DateTime?              @default(now()) @db.Timestamp(0)
+  actualizadoEn        DateTime?              @updatedAt @db.Timestamp(0)
+  productosIngresados  productosIngresados[]
+  inventarios          inventarios[]
+  ProductosSolicitados ProductosSolicitados[]
+
+  @@map("articulos")
+}
+
+model unidadesMedida {
+  id          Int     @id @default(autoincrement())
+  codigo      String? @db.VarChar(250)
+  nombre      String  @db.VarChar(250)
+  descripcion String? @db.VarChar(250)
+
+  estado              Int                   @default(1)
+  creadoEn            DateTime?             @default(now()) @db.Timestamp(0)
+  actualizadoEn       DateTime?             @updatedAt @db.Timestamp(0)
+  productosIngresados productosIngresados[]
+
+  @@map("unidades_medida")
+}
+
+model productosIngresados {
+  id                Int       @id @default(autoincrement())
+  articuloId        Int?
+  cantidad          Float?    @default(0)
+  unidadMedidaId    Int?
+  cantidadIngresada Float?    @default(0)
+  cantidadEgresada  Float?    @default(0)
+  precioUnitario    Float?    @default(0)
+  totalIngreso      Float?    @default(0)
+  fechaIngreso      DateTime? @db.Timestamp()
+  fechaFacturacion  DateTime? @db.Timestamp()
+  fechaVencimiento  DateTime? @db.Timestamp()
+
+  estado        Int       @default(1)
+  creadoEn      DateTime? @default(now()) @db.Timestamp(0)
+  actualizadoEn DateTime? @updatedAt @db.Timestamp(0)
+
+  articulos      articulos?      @relation(fields: [articuloId], references: [id], onDelete: Restrict)
+  unidadesMedida unidadesMedida? @relation(fields: [unidadMedidaId], references: [id], onDelete: Restrict)
+
+  @@map("productos_ingresados")
+}
+
+model inventarios {
+  id         Int @id @default(autoincrement())
+  articuloId Int
+
+  unidadMedidaId  Int?
+  cantidadMinima  Float
+  cantidad        Float?  @default(0)
+  esVisibleMp     Boolean @default(true)
+  cantidadOficial Float?  @default(0)
+
+  estado        Int       @default(1)
+  creadoEn      DateTime? @default(now()) @db.Timestamp(0)
+  actualizadoEn DateTime? @updatedAt @db.Timestamp(0)
+
+  articulos            articulos              @relation(fields: [articuloId], references: [id], onDelete: Restrict)
+  ProductosSolicitados ProductosSolicitados[]
+
+  @@map("inventarios")
+}
+
+model solicitudesCompras {
+  id                   Int       @id @default(autoincrement())
+  codigo               String?
+  usuarioId            Int
+  fechaSolicitud       DateTime  @db.Timestamp()
+  fechaCompra          DateTime? @db.Timestamp()
+  fechaFacturacion     DateTime? @db.Timestamp()
+  montoTotalSolicitado Float     @default(0)
+  montoTotalCompra     Float     @default(0)
+  esSolicitudCerrada   Boolean   @default(false)
+
+  estado        Int       @default(1)
+  creadoEn      DateTime? @default(now()) @db.Timestamp(0)
+  actualizadoEn DateTime? @updatedAt @db.Timestamp(0)
+
+  usuarios             Usuarios               @relation(fields: [usuarioId], references: [id])
+  ProductosSolicitados ProductosSolicitados[]
+
+  @@map("solicitudes_compras")
+}
+
+model ProductosSolicitados {
+  id                Int   @id @default(autoincrement())
+  articuloId        Int
+  solicitudCompraId Int
+  inventarioId      Int
+  cantidad          Float @default(0)
+  precioUnitario    Float @default(0)
+  total             Float @default(0)
+
+  estado        Int       @default(1)
+  creadoEn      DateTime? @default(now()) @db.Timestamp(0)
+  actualizadoEn DateTime? @updatedAt @db.Timestamp(0)
+
+  articulos          articulos          @relation(fields: [articuloId], references: [id])
+  solicitudesCompras solicitudesCompras @relation(fields: [solicitudCompraId], references: [id])
+  inventarios        inventarios        @relation(fields: [inventarioId], references: [id])
+
+  @@map("productos_solicitados")
 }

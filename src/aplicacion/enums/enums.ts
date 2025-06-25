@@ -1,0 +1,22 @@
+enum TipoProducto {
+  FISICO = 'FISICO',
+  DIGITAL = 'DIGITAL',
+  PERECIBLE = 'PERECIBLE',
+  SERVICIO = 'SERVICIO',
+}
+
+enum EstadoSolicitud {
+  BORRADOR = 0,
+  PENDIENTE = 1,
+  APROBADA = 2,
+  RECHAZADA = 3,
+  PROCESANDO = 4,
+  COMPLETADA = 5,
+  CANCELADA = 6,
+}
+
+enum TipoDescuento {
+  PORCENTAJE = 'PORCENTAJE',
+  MONTO_FIJO = 'MONTO_FIJO',
+  ENVIO_GRATIS = 'ENVIO_GRATIS',
+}
