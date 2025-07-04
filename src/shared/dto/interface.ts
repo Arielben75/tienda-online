@@ -39,6 +39,7 @@ export interface ArticuloBase {
 }
 
 export interface ProductoIngresadoData {
+  id?: number;
   articuloId?: number;
   cantidad?: number;
   unidadMedidaId?: number;
