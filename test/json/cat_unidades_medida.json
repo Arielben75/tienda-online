@@ -1,0 +1,416 @@
+[
+	{
+		"id" : 1,
+		"codigo" : "PZA",
+		"nombre" : "PIEZA",
+		"descripcion" : "unidad de  medida  para  cantidades",
+		"estado" : 1,
+		"creadoEn" : "2024-09-05T23:23:49.000Z",
+		"actualizadoEn" : "2024-09-05T23:23:49.000Z"
+	},
+	{
+		"id" : 2,
+		"codigo" : "HOJA",
+		"nombre" : "HOJA",
+		"descripcion" : "agrupacion de de   piezas",
+		"estado" : 1,
+		"creadoEn" : "2024-09-05T23:24:30.000Z",
+		"actualizadoEn" : "2024-09-05T23:24:30.000Z"
+	},
+	{
+		"id" : 3,
+		"codigo" : "GALON",
+		"nombre" : "GALON",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 4,
+		"codigo" : "BLOCK",
+		"nombre" : "BLOCK",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 5,
+		"codigo" : "M",
+		"nombre" : "METRO",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 6,
+		"codigo" : "BOTE",
+		"nombre" : "BOTE",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 7,
+		"codigo" : "CAJA",
+		"nombre" : "CAJA",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 8,
+		"codigo" : "QUITAL",
+		"nombre" : "QUINTAL",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 9,
+		"codigo" : "PAQUETE",
+		"nombre" : "PAQUETE",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 10,
+		"codigo" : "PLIEGO",
+		"nombre" : "PLIEGO",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 11,
+		"codigo" : "ROLLO",
+		"nombre" : "ROLLO",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 12,
+		"codigo" : "OVILLO",
+		"nombre" : "OVILLO",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 13,
+		"codigo" : "DOCENA",
+		"nombre" : "DOCENA",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 14,
+		"codigo" : "PAR",
+		"nombre" : "PAR",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 15,
+		"codigo" : "FRASCO",
+		"nombre" : "FRASCO",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 16,
+		"codigo" : "JUEGO",
+		"nombre" : "JUEGO",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 17,
+		"codigo" : null,
+		"nombre" : "GLOBAL",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 18,
+		"codigo" : null,
+		"nombre" : "BOLSA",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 19,
+		"codigo" : null,
+		"nombre" : "LAMINA",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 20,
+		"codigo" : null,
+		"nombre" : "KILO",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 21,
+		"codigo" : null,
+		"nombre" : "BARRA",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 22,
+		"codigo" : null,
+		"nombre" : "TUBO",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 23,
+		"codigo" : null,
+		"nombre" : "PAGINA",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 24,
+		"codigo" : null,
+		"nombre" : "PUBLICACION",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 25,
+		"codigo" : null,
+		"nombre" : "EQUIPO",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 27,
+		"codigo" : null,
+		"nombre" : "MESES",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 28,
+		"codigo" : null,
+		"nombre" : "LICENCIA",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 30,
+		"codigo" : null,
+		"nombre" : "KIT",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 31,
+		"codigo" : null,
+		"nombre" : "OTROS",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 32,
+		"codigo" : null,
+		"nombre" : "METRO CUBICO",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 33,
+		"codigo" : null,
+		"nombre" : "CILINDRO",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 34,
+		"codigo" : null,
+		"nombre" : "METRO LINEAL",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 35,
+		"codigo" : "PORCION",
+		"nombre" : "PORCION",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 36,
+		"codigo" : null,
+		"nombre" : "ARROBA",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 37,
+		"codigo" : null,
+		"nombre" : "LIBRO",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 38,
+		"codigo" : "BALDE",
+		"nombre" : "BALDE",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 39,
+		"codigo" : "BIDON",
+		"nombre" : "BIDON",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 40,
+		"codigo" : "SOBRE",
+		"nombre" : "SOBRE",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 41,
+		"codigo" : "CONJUNTO",
+		"nombre" : "CONJUNTO",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 42,
+		"codigo" : "PUNTO",
+		"nombre" : "PUNTO",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 43,
+		"codigo" : "SET",
+		"nombre" : "SET",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : null
+	},
+	{
+		"id" : 44,
+		"codigo" : "POMO",
+		"nombre" : "POMO",
+		"descripcion" : "POMO",
+		"estado" : 1,
+		"creadoEn" : "2024-10-07T16:52:13.000Z",
+		"actualizadoEn" : "2024-10-07T16:52:13.000Z"
+	},
+	{
+		"id" : 45,
+		"codigo" : "SACHET",
+		"nombre" : "SACHET",
+		"descripcion" : "SACHET",
+		"estado" : 1,
+		"creadoEn" : "2024-12-04T20:38:28.000Z",
+		"actualizadoEn" : "2024-12-04T20:38:28.000Z"
+	},
+	{
+		"id" : 46,
+		"codigo" : "MILILITRO",
+		"nombre" : "MILILITRO",
+		"descripcion" : "MILILITRO",
+		"estado" : 1,
+		"creadoEn" : "2024-12-05T18:00:20.000Z",
+		"actualizadoEn" : "2024-12-05T18:00:20.000Z"
+	},
+	{
+		"id" : 29,
+		"codigo" : "LT",
+		"nombre" : "LITRO",
+		"descripcion" : "unidad  de  liquidos",
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : "2024-12-05T18:53:08.000Z"
+	},
+	{
+		"id" : 26,
+		"codigo" : "M2",
+		"nombre" : "METRO CUADRADO",
+		"descripcion" : null,
+		"estado" : 1,
+		"creadoEn" : "2024-09-13T18:23:36.000Z",
+		"actualizadoEn" : "2024-12-12T00:37:40.000Z"
+	}
+]

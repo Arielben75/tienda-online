@@ -174,7 +174,7 @@ export class ProductosService {
   /**
    * Calcula el resumen de precios de un producto decorado
    */
-  static obtenerResumenPrecios(producto: IProducto): {
+  obtenerResumenPrecios(producto: IProducto): {
     precioBase: number;
     precioFinal: number;
     totalDescuentos: number;
